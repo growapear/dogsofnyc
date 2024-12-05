@@ -22,6 +22,19 @@ const nameToColor = {
   "MOLLY": "rgb(154, 246, 166)"
 }
 
+// First, add this at the start of your file (before any chart creation)
+const tooltip = d3.select("body")
+  .append("div")
+  .attr("class", "tooltip")
+  .style("position", "absolute")
+  .style("visibility", "hidden")
+  .style("background-color", "white")
+  .style("border", "solid")
+  .style("border-width", "1px")
+  .style("border-radius", "5px")
+  .style("padding", "10px")
+  .style("z-index", "10");
+
 // Function to load data
 function loadData(filePath) {
   return d3.csv(filePath).then(data => {
@@ -52,19 +65,31 @@ async function initialize() {
 
 // Function to generate a line chart for dog name trends
 async function generateLineChart(data, chartId) {
+  // Convert string values to numbers
   data.forEach(d => {
     d.AnimalBirthYear = +d.AnimalBirthYear;
     d.Count = +d.Count;
+    // Ensure these are valid numbers
+    console.log("Year:", d.AnimalBirthYear, "Count:", d.Count); // Debug log
   });
 
-  const topNames = Array.from(d3.rollups(data, v => d3.sum(v, d => d.Count), d => d.AnimalName))
+  // Process top names
+  const topNames = Array.from(
+    d3.rollups(
+      data, 
+      v => d3.sum(v, d => d.Count), 
+      d => d.AnimalName
+    ))
     .sort((a, b) => d3.descending(a[1], b[1]))
     .slice(0, 10)
     .map(d => d[0]);
 
+  // Filter and nest data
   const filteredData = data.filter(d => topNames.includes(d.AnimalName));
-
-  const nestedData = Array.from(d3.group(filteredData, d => d.AnimalName), ([key, values]) => ({ key, values }));
+  const nestedData = Array.from(
+    d3.group(filteredData, d => d.AnimalName), 
+    ([key, values]) => ({ key, values })
+  );
 
   const margin = { top: 50, right: 50, bottom: 150, left: 60 };
   const width = 550 - margin.left - margin.right;
@@ -110,17 +135,40 @@ async function generateLineChart(data, chartId) {
     .attr("cy", d => y(d.Count))
     .attr("r", 4)
     .attr("fill", d => nameToColor[d.AnimalName] || "black")
-    .on("mouseover", function (event, d) {
-      // Show tooltip on hover
-      d3.select("#tooltip")
-        .style("opacity", 1)
-        .html(`Name: ${d.AnimalName}<br>Year: ${d.AnimalBirthYear}<br>Count: ${d.Count}`)
-        .style("left", `${event.pageX + 10}px`)
-        .style("top", `${event.pageY - 20}px`);
+    .style("cursor", "pointer")
+    .on("mouseover", function(event, d) {
+      // Highlight the point
+      d3.select(this)
+        .transition()
+        .duration(200)
+        .attr("r", 8);
+
+      // Show tooltip
+      tooltip
+        .style("visibility", "visible")
+        .html(`
+          <strong>${d.AnimalName}</strong><br/>
+          Year: ${d.AnimalBirthYear}<br/>
+          Count: ${d.Count}
+        `)
+        .style("left", (event.pageX + 10) + "px")
+        .style("top", (event.pageY - 10) + "px");
     })
-    .on("mouseout", () => {
+    .on("mouseout", function() {
+      // Reset point size
+      d3.select(this)
+        .transition()
+        .duration(200)
+        .attr("r", 4);
+
       // Hide tooltip
-      d3.select("#tooltip").style("opacity", 0);
+      tooltip.style("visibility", "hidden");
+    })
+    .on("mousemove", function(event) {
+      // Move tooltip with cursor
+      tooltip
+        .style("left", (event.pageX + 10) + "px")
+        .style("top", (event.pageY - 10) + "px");
     });
 
   // Add Axes
@@ -193,18 +241,6 @@ async function generateLineChart(data, chartId) {
       .text(name);
   });
 }
-
-// Add Tooltip Element to Body
-d3.select("body")
-  .append("div")
-  .attr("id", "tooltip")
-  .style("position", "absolute")
-  .style("background", "#fff")
-  .style("border", "1px solid #ccc")
-  .style("border-radius", "4px")
-  .style("padding", "8px")
-  .style("pointer-events", "none")
-  .style("opacity", 0);
 
 // Call the initialize function to render the charts
 initialize();
