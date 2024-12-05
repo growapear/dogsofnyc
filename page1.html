@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>Dog in Brooklyn</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/2.2.2/scrollama.min.js"></script> -->
+    <script src="scrollama.min.js"></script>
+   <link rel="stylesheet" href="style.css" /> 
+
+</head>
+<body>
+    <section id="intro">
+        <div class="intro-content">
+            <h1>The Dogs of New York City</h1>
+        </div>
+        <h4><strong>Uncover NYC's dog culture through names that reflect each borough's unique charm.</strong></h4>
+            <div id="view">
+            <p>Select your interest borough</p>
+        </div>
+            <nav>
+                <ul>
+                    <li><a class="nav-button" href="index.html">Manhattan</a></li>
+                    <li><a class="nav-button" href="page1.html">Brooklyn</a></li>
+                    <li><a class="nav-button" href="page2.html">Bronx</a></li>
+                    <li><a class="nav-button" href="page3.html">Queens</a></li>
+                    <li><a class="nav-button" href="page4.html">Staten Island</a></li>
+                </ul>
+            </nav>
+            <div id="scroll">
+                <h5><strong><em>Scroll to explore</em></strong></h5>
+            </div>
+        </div>
+    </section>
+    <div id="map-container">
+        <div id="map" class="sticky-map"></div>
+    </div>
+    
+    <main id="project-wrapper">
+        <section id="scrolly">
+            <article>
+                <div class="step" data-step="0">
+                    <img src="assets/dogoverall.png" alt="Dogs of NYC" class="header-image">
+                    <h3><strong>The Dogs of New York City</strong></h3>
+                    <h5 style="font-weight: normal; font-style: normal;">As the sun rises over New York City, the streets begin to bustle not just with humans, but with their loyal canine companions. In every neighborhood, from the lively streets of Brooklyn to the more refined avenues of Manhattan, dogs are an integral part of city life. Each borough has its own unique dog culture, and with it, its own popular dog names. This interactive exploration will take you on a journey through the neighborhoods of New York City, uncovering the stories behind the most beloved dog names and how they reflect the character of each borough. So, let's meet the dogs of NYC, one name at a time.</h5>
+                    <h3><strong>Brooklyn — The Trendy Pups</strong></h3>
+                    <p class="description-text" style="font-style: normal;">Brooklyn’s dogs have names as cool and eclectic as their borough. From artsy names like Luna to classic favorites like Bella, Brooklyn pups are always on trend. Whether they're running through the streets of Williamsburg or lounging in Park Slope, these dogs know how to turn heads. With names like Rocky and Lola, they fit perfectly into the borough’s lively, artistic, and slightly rebellious atmosphere.</p>
+                    <p class="source-text">Based on Dog License Data from 2014-2024 <a href="https://data.cityofnewyork.us/Health/NYC-Dog-Licensing-Dataset/nu7n-tubp/about_data" target="_blank">NYC OpenData</a></p>
+                </div>
+                <div class="step" data-step="1">
+                    <img src="assets/max.png" alt="Max" class="header-image">
+                    <h3><strong> "Max"</strong></h3>
+                    <h5><strong>The Top Male Name in Brooklyn</strong></h5>
+                    <p class="description-text" style="font-style: normal;">Max is the ultimate all-around name that shows up time and again in Brooklyn, thanks to its perfect balance of simplicity and boldness. Just like Brooklyn itself, Max is versatile—whether it’s a pup in DUMBO or a hipster dog in Williamsburg, Max makes a statement. Plus, it's a great name for a dog who’s always exploring the creative, urban landscape of this trendy borough.
+                    </p>
+                </div>
+                <div class="step" data-step="2">
+                    <img src="assets/bella.png" alt="Bella" class="header-image">
+                    <h3><strong> "Bella"</strong></h3>
+                    <h5><strong>The Top Female Name in Brooklyn</strong></h5>
+                    <p class="description-text" style="font-style: normal;">Bella is a top contender in Brooklyn, where style and substance go hand in hand. With its chic and timeless appeal, Bella is the name of choice for the borough's fashionable four-legged friends. Whether living it up in Williamsburg or cruising through Brooklyn Heights, Bella pups are the trendsetters, always drawing attention with their beauty and charm.
+                    </p>
+                </div>
+                  <div class="step" data-step="3">
+                    <h3 class="smaller-heading" style="margin-top: 3rem;"><strong>Time Trends showing how dog names have evolved over the years</strong></h3>
+                    <p class="description-text compact" style="font-style: normal;">In 2016, Brooklyn reached its peak of affection for the name "Max," with 20,736 dogs proudly carrying this classic name across the borough. A true representation of Brooklyn’s vibrant and versatile charm, Max fits seamlessly into the diverse neighborhoods, from the dynamic culture of Williamsburg to the family-friendly streets of Park Slope. Whether joining their owners for a jog in Prospect Park or lounging in a cozy Brooklyn brownstone, Brooklyn’s Maxes embody the borough’s spirit of energy and adaptability.</p>
+                    <div class="chart-container" id="chart2" style="margin-top: -2rem;"></div>
+                </div>
+                  
+                <div class="step" data-step="4">
+                    <h3 style="margin-top: 2rem;"><strong>Brooklyn's Most Pawpular: Yorkshire Terrier & Shih Tzu</strong></h3>
+                    <p class="description-text" style="font-style: normal; font-size: 0.85rem;">Brooklyn’s streets are alive with creativity, and the Yorkshire Terrier and Shih Tzu perfectly reflect the borough’s artistic yet laid-back vibe. Yorkies, known for their stylish appearance and confident personalities, are often spotted accompanying their owners on creative excursions through the Brooklyn Museum or cafes in DUMBO. Meanwhile, Shih Tzus bring their gentle and affectionate energy to the neighborhoods, often seen on leisurely walks through Prospect Park or being pampered at local grooming salons. These breeds, small yet full of character, mirror the eclectic and creative spirit of Brooklyn.</p>
+                    
+                    <div class="dropdown" style="margin: 10px 0;">
+                        <label for="dogSelector">Select Dog Breed:</label>
+                        <select id="dogSelector">
+                            <option value="all">-- Select a Dog Name --</option>
+                        </select>
+                    </div>
+
+                    <div id="piechart2" class="borough-container">
+                    </div>
+                    <div class="tooltip" id="tooltip"></div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="piechart.js"></script>
+    <script>
+
+// Using d3 for convenience
+var main = d3.select("main");
+var scrolly = main.select("#scrolly");
+var steps = scrolly.selectAll(".step");
+
+
+// Initialize the scrollama
+var scroller = scrollama();
+
+// Resize function to set step heights
+function handleResize() {
+    var stepH = Math.floor(window.innerHeight * 0.75);
+    steps.style("height", stepH + "px");
+    scroller.resize();
+}
+
+
+
+// Setup the Scrollama instance, pass callback functions
+scroller.setup({
+    step: '.step',
+    offset: 0.5,
+    order: true, // Scrollama will trigger the steps in order
+    once: false // Allow steps to be triggered multiple times
+
+}).onStepEnter(handleStepEnter);
+
+// Scrollama event handler
+function handleStepEnter(response) {
+    if (!map.isStyleLoaded()) {
+        console.warn("Map style not fully loaded yet.");
+        return;
+    }
+
+    steps.classed("is-active", false);
+    d3.select(response.element).classed("is-active", true);
+
+    const currentStep = response.element.getAttribute('data-step');
+
+    // Reset filters initially (optional, based on your use case)
+    map.setFilter('dog-wordcloud-layer', null);
+
+    switch (currentStep) {
+        case '0':
+            // Step 0: Do not show the layer (hide)
+            map.setLayoutProperty('dog-wordcloud-layer', 'visibility', 'none');
+            break;
+        case '1':
+            // Step 1: Show only blue items
+            map.setLayoutProperty('dog-wordcloud-layer', 'visibility', 'visible');
+            map.setFilter('dog-wordcloud-layer', ['==', ['get', 'Color'], 'blue']);
+            break;
+        case '2':
+            // Step 2: Show only pink items
+            map.setLayoutProperty('dog-wordcloud-layer', 'visibility', 'visible');
+            map.setFilter('dog-wordcloud-layer', ['==', ['get', 'Color'], 'pink']);
+            break;
+        case '3':
+            // Step 3: Show both blue and pink items
+            map.setLayoutProperty('dog-wordcloud-layer', 'visibility', 'visible');
+            map.setFilter('dog-wordcloud-layer', ['in', ['get', 'Color'], 'blue', 'pink']);
+            break;
+        case '4':
+            // Step 4: Show both blue and pink items
+            map.setLayoutProperty('dog-wordcloud-layer', 'visibility', 'visible');
+            map.setFilter('dog-wordcloud-layer', ['in', ['get', 'Color'], 'blue', 'pink']);
+            break;
+        default:
+            console.warn(`No action defined for step ${currentStep}`);
+    }
+}
+
+
+
+// Resize event listener
+window.addEventListener('resize', handleResize);
+
+// Load the map and then initialize the scrollytelling
+mapboxgl.accessToken = 'pk.eyJ1IjoicGFueWFudXMiLCJhIjoiY2x6MXo0Ym9jMWZ6cjJrb2l6YXk2NnAzaSJ9._smojqWBDds304Vg0Ubtmw';
+
+        // Initialize the Map
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/panyanus/cm2mt0d7o004x01qjhaprhmtg',
+            center: [-74.0442,  40.6782], // Adjust as necessary 
+            zoom: 11,
+            projection: 'mercator'
+        });
+
+// Load the map and add the tileset source
+map.on('load', () => {
+    console.log('Map style is fully loaded.');
+
+    // Your layer and source addition code here
+    map.addSource('dog-wordcloud-source', {
+        type: 'vector',
+        url: 'mapbox://fern257-.057z1336'
+    });
+
+    map.addLayer({
+        id: 'dog-wordcloud-layer',
+        type: 'symbol',
+        source: 'dog-wordcloud-source',
+        'source-layer': 'bk-wordcloud_data_top5_lat_ln-b3tu78',
+        layout: {
+            'text-field': ['get', 'AnimalName'],
+            'text-size': ['get', 'Size'],
+            'text-allow-overlap': true
+        },
+        paint: {
+        'text-color': [
+            'match',
+            ['get', 'Color'], // 获取 'Color' 字段的值
+            'pink', '#E754A3', // 适中的粉色
+            'blue', '#4D8FD3', // 适中的蓝色
+            '#000000' // 默认颜色（黑色），如果没有匹配
+        ],
+        'text-opacity': 1
+}
+    });
+
+    // Add the source for the boundary data
+    map.addSource('boundary-source', {
+        type: 'vector',
+        url: 'mapbox://panyanus.1f9ftbr4' // Ensure this matches your tileset ID
+    });
+
+    // Add a layer for boundaries
+    map.addLayer({
+        id: 'boundary', // Updated layer ID
+        type: 'line', // Use 'line' type for boundaries
+        source: 'boundary-source', // Use the correct source name
+        'source-layer': 'bk-neighborhood_top5_summary-8cjyoh', // Update to the correct source-layer for boundaries
+        layout: {
+            'line-join': 'round',
+            'line-cap': 'round'
+        },
+        paint: {
+            'line-color': '#ffffff', // White color for boundary lines
+            'line-width': 2 // Adjust the line width as needed
+        }
+    });
+});
+
+                                                              
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,301 @@
+﻿Dog Name,Breed Name,Count,Borough Name
+Bella,Yorkshire Terrier,128,Bronx
+Bella,Shih Tzu,100,Bronx
+Bella,Chihuahua,43,Bronx
+Bella,American Pit Bull Terrier/Pit Bull,35,Bronx
+Bella,Shih Tzu Crossbreed,35,Bronx
+Bella,Others,563,Bronx
+Max,Shih Tzu,100,Bronx
+Max,Others,535,Bronx
+Max,Yorkshire Terrier,78,Bronx
+Max,Maltese,40,Bronx
+Max,Chihuahua,29,Bronx
+Max,American Pit Bull Terrier/Pit Bull,26,Bronx
+Luna,Yorkshire Terrier,52,Bronx
+Luna,Others,469,Bronx
+Luna,Siberian Husky,45,Bronx
+Luna,American Pit Bull Terrier/Pit Bull,36,Bronx
+Luna,German Shepherd Dog,33,Bronx
+Luna,Chihuahua,32,Bronx
+Coco,Shih Tzu,78,Bronx
+Coco,Chihuahua,59,Bronx
+Coco,Others,315,Bronx
+Coco,Yorkshire Terrier,43,Bronx
+Coco,Shih Tzu Crossbreed,38,Bronx
+Coco,Maltese,37,Bronx
+Rocky,Others,433,Bronx
+Rocky,Yorkshire Terrier,40,Bronx
+Rocky,Shih Tzu,37,Bronx
+Rocky,Shih Tzu Crossbreed,23,Bronx
+Rocky,American Pit Bull Mix / Pit Bull Mix,23,Bronx
+Rocky,American Pit Bull Terrier/Pit Bull,23,Bronx
+Princess,Shih Tzu,80,Bronx
+Princess,Others,305,Bronx
+Princess,Chihuahua,51,Bronx
+Princess,Yorkshire Terrier,41,Bronx
+Princess,American Pit Bull Mix / Pit Bull Mix,23,Bronx
+Princess,Maltese,23,Bronx
+Lucky,Others,321,Bronx
+Lucky,Yorkshire Terrier,35,Bronx
+Lucky,Shih Tzu,34,Bronx
+Lucky,Chihuahua,30,Bronx
+Lucky,Shih Tzu Crossbreed,18,Bronx
+Lucky,Maltese,16,Bronx
+Teddy,Shih Tzu Crossbreed,70,Bronx
+Teddy,Shih Tzu,54,Bronx
+Teddy,Yorkshire Terrier,50,Bronx
+Teddy,Others,220,Bronx
+Teddy,Maltese,19,Bronx
+Teddy,Morkie,15,Bronx
+Lola,Shih Tzu,57,Bronx
+Lola,Yorkshire Terrier,33,Bronx
+Lola,Chihuahua,26,Bronx
+Lola,American Pit Bull Terrier/Pit Bull,24,Bronx
+Lola,Others,264,Bronx
+Lola,American Pit Bull Mix / Pit Bull Mix,17,Bronx
+Oreo,Shih Tzu,99,Bronx
+Oreo,Shih Tzu Crossbreed,35,Bronx
+Oreo,Others,209,Bronx
+Oreo,American Pit Bull Terrier/Pit Bull,19,Bronx
+Oreo,Havanese,18,Bronx
+Oreo,American Pit Bull Mix / Pit Bull Mix,16,Bronx
+Bella,Others,1102,Brooklyn
+Bella,Yorkshire Terrier,136,Brooklyn
+Bella,Shih Tzu,113,Brooklyn
+Bella,Maltese,92,Brooklyn
+Bella,Chihuahua,70,Brooklyn
+Bella,American Pit Bull Terrier/Pit Bull,56,Brooklyn
+Max,Yorkshire Terrier,154,Brooklyn
+Max,Others,913,Brooklyn
+Max,Shih Tzu,116,Brooklyn
+Max,American Pit Bull Terrier/Pit Bull,47,Brooklyn
+Max,American Pit Bull Mix / Pit Bull Mix,39,Brooklyn
+Max,Labrador Retriever Crossbreed,37,Brooklyn
+Luna,Others,931,Brooklyn
+Luna,Labrador Retriever Crossbreed,59,Brooklyn
+Luna,Labrador Retriever,52,Brooklyn
+Luna,Shih Tzu,42,Brooklyn
+Luna,Terrier mix,41,Brooklyn
+Luna,Yorkshire Terrier,40,Brooklyn
+Charlie,Others,851,Brooklyn
+Charlie,Cavalier King Charles Spaniel,52,Brooklyn
+Charlie,Yorkshire Terrier,47,Brooklyn
+Charlie,Labrador Retriever Crossbreed,46,Brooklyn
+Charlie,Shih Tzu,45,Brooklyn
+Charlie,Labrador Retriever,32,Brooklyn
+Rocky,Others,716,Brooklyn
+Rocky,Yorkshire Terrier,91,Brooklyn
+Rocky,Shih Tzu,60,Brooklyn
+Rocky,Chihuahua,54,Brooklyn
+Rocky,Boxer,39,Brooklyn
+Rocky,American Pit Bull Terrier/Pit Bull,33,Brooklyn
+Lola,Others,707,Brooklyn
+Lola,Shih Tzu,61,Brooklyn
+Lola,Yorkshire Terrier,57,Brooklyn
+Lola,Chihuahua,47,Brooklyn
+Lola,Labrador Retriever Crossbreed,47,Brooklyn
+Lola,American Pit Bull Mix / Pit Bull Mix,36,Brooklyn
+Coco,Yorkshire Terrier,103,Brooklyn
+Coco,Shih Tzu,87,Brooklyn
+Coco,Others,569,Brooklyn
+Coco,Chihuahua,46,Brooklyn
+Coco,Maltese,42,Brooklyn
+Coco,Shih Tzu Crossbreed,25,Brooklyn
+Lucky,Yorkshire Terrier,97,Brooklyn
+Lucky,Shih Tzu,92,Brooklyn
+Lucky,Others,522,Brooklyn
+Lucky,Maltese,73,Brooklyn
+Lucky,Chihuahua,43,Brooklyn
+Lucky,German Shepherd Dog,24,Brooklyn
+Lucy,Others,639,Brooklyn
+Lucy,Shih Tzu,51,Brooklyn
+Lucy,Yorkshire Terrier,43,Brooklyn
+Lucy,Labrador Retriever Crossbreed,42,Brooklyn
+Lucy,Maltese,26,Brooklyn
+Lucy,Chihuahua,20,Brooklyn
+Daisy,Others,584,Brooklyn
+Daisy,Yorkshire Terrier,44,Brooklyn
+Daisy,Shih Tzu,40,Brooklyn
+Daisy,Labrador Retriever Crossbreed,39,Brooklyn
+Daisy,Maltese,37,Brooklyn
+Daisy,Chihuahua,30,Brooklyn
+Charlie,Others,1446,Manhattan
+Charlie,Cavalier King Charles Spaniel,117,Manhattan
+Charlie,Havanese,70,Manhattan
+Charlie,Chihuahua,60,Manhattan
+Charlie,Labrador Retriever,53,Manhattan
+Charlie,Goldendoodle,52,Manhattan
+Lucy,Labrador Retriever,86,Manhattan
+Lucy,Havanese,67,Manhattan
+Lucy,Labradoodle,60,Manhattan
+Lucy,Yorkshire Terrier,53,Manhattan
+Lucy,Chihuahua,49,Manhattan
+Lucy,Others,1463,Manhattan
+Bella,Yorkshire Terrier,101,Manhattan
+Bella,Shih Tzu,87,Manhattan
+Bella,Chihuahua,69,Manhattan
+Bella,Labrador Retriever Crossbreed,45,Manhattan
+Bella,Havanese,44,Manhattan
+Bella,Others,1125,Manhattan
+Lola,Chihuahua,90,Manhattan
+Lola,Havanese,71,Manhattan
+Lola,Yorkshire Terrier,61,Manhattan
+Lola,French Bulldog,56,Manhattan
+Lola,Maltese,49,Manhattan
+Lola,Others,1118,Manhattan
+Luna,Labrador Retriever,63,Manhattan
+Luna,Chihuahua,60,Manhattan
+Luna,Havanese,52,Manhattan
+Luna,Labrador Retriever Crossbreed,50,Manhattan
+Luna,Yorkshire Terrier,47,Manhattan
+Luna,Others,1131,Manhattan
+Max,Yorkshire Terrier,77,Manhattan
+Max,Shih Tzu,67,Manhattan
+Max,Chihuahua,53,Manhattan
+Max,Labrador Retriever,46,Manhattan
+Max,Havanese,43,Manhattan
+Max,Others,1027,Manhattan
+Coco,Yorkshire Terrier,112,Manhattan
+Coco,Others,828,Manhattan
+Coco,Shih Tzu,86,Manhattan
+Coco,Chihuahua,61,Manhattan
+Coco,Poodle Crossbreed,57,Manhattan
+Coco,Maltese,49,Manhattan
+Daisy,Yorkshire Terrier,49,Manhattan
+Daisy,Chihuahua,40,Manhattan
+Daisy,Labrador Retriever,36,Manhattan
+Daisy,Chihuahua Crossbreed,30,Manhattan
+Daisy,Havanese,29,Manhattan
+Daisy,Others,821,Manhattan
+Teddy,Shih Tzu,48,Manhattan
+Teddy,Labradoodle,43,Manhattan
+Teddy,Shih Tzu Crossbreed,41,Manhattan
+Teddy,"Poodle, Toy",40,Manhattan
+Teddy,Yorkshire Terrier,40,Manhattan
+Teddy,Others,781,Manhattan
+Oliver,Cavalier King Charles Spaniel,58,Manhattan
+Oliver,Cocker Spaniel,47,Manhattan
+Oliver,Shih Tzu,35,Manhattan
+Oliver,Maltese,34,Manhattan
+Oliver,Havanese,31,Manhattan
+Oliver,Others,761,Manhattan
+Bella,Yorkshire Terrier,154,Queens
+Bella,Shih Tzu,113,Queens
+Bella,Maltese,82,Queens
+Bella,American Pit Bull Mix / Pit Bull Mix,55,Queens
+Bella,Chihuahua,50,Queens
+Bella,Others,1077,Queens
+Max,Shih Tzu,112,Queens
+Max,Yorkshire Terrier,94,Queens
+Max,Maltese,72,Queens
+Max,German Shepherd Dog,71,Queens
+Max,Labrador Retriever,59,Queens
+Max,Others,978,Queens
+Coco,Yorkshire Terrier,137,Queens
+Coco,Shih Tzu,87,Queens
+Coco,Maltese,83,Queens
+Coco,Chihuahua,59,Queens
+Coco,Labrador Retriever,46,Queens
+Coco,Others,724,Queens
+Rocky,Yorkshire Terrier,99,Queens
+Rocky,Maltese,46,Queens
+Rocky,German Shepherd Dog,40,Queens
+Rocky,Shih Tzu,39,Queens
+Rocky,American Pit Bull Terrier/Pit Bull,27,Queens
+Rocky,Others,708,Queens
+Luna,Shih Tzu,40,Queens
+Luna,Yorkshire Terrier,39,Queens
+Luna,Shih Tzu Crossbreed,34,Queens
+Luna,Siberian Husky,34,Queens
+Luna,Labrador Retriever Crossbreed,32,Queens
+Luna,Others,762,Queens
+Charlie,Yorkshire Terrier,76,Queens
+Charlie,Others,632,Queens
+Charlie,Shih Tzu,66,Queens
+Charlie,Labrador Retriever,46,Queens
+Charlie,Labrador Retriever Crossbreed,42,Queens
+Charlie,Cavalier King Charles Spaniel,41,Queens
+Lucky,Yorkshire Terrier,76,Queens
+Lucky,Shih Tzu,53,Queens
+Lucky,Chihuahua,49,Queens
+Lucky,Maltese,43,Queens
+Lucky,Shih Tzu Crossbreed,25,Queens
+Lucky,Others,569,Queens
+Milo,Yorkshire Terrier,82,Queens
+Milo,Others,559,Queens
+Milo,Shih Tzu,47,Queens
+Milo,Maltese,37,Queens
+Milo,Shih Tzu Crossbreed,32,Queens
+Milo,Cocker Spaniel,29,Queens
+Buddy,Shih Tzu,43,Queens
+Buddy,Yorkshire Terrier,39,Queens
+Buddy,Maltese,28,Queens
+Buddy,Beagle,25,Queens
+Buddy,Chihuahua,24,Queens
+Buddy,Others,564,Queens
+Lola,Yorkshire Terrier,57,Queens
+Lola,Shih Tzu,52,Queens
+Lola,Maltese,35,Queens
+Lola,Chihuahua,33,Queens
+Lola,Cocker Spaniel,28,Queens
+Lola,Others,482,Queens
+Bella,Shih Tzu,80,Staten Island
+Bella,Yorkshire Terrier,76,Staten Island
+Bella,German Shepherd Dog,40,Staten Island
+Bella,Havanese,35,Staten Island
+Bella,Labrador Retriever,34,Staten Island
+Bella,Others,561,Staten Island
+Max,Shih Tzu,69,Staten Island
+Max,Yorkshire Terrier,44,Staten Island
+Max,German Shepherd Dog,31,Staten Island
+Max,Puggle,25,Staten Island
+Max,Maltese,21,Staten Island
+Max,Others,392,Staten Island
+Coco,Yorkshire Terrier,77,Staten Island
+Coco,Shih Tzu,67,Staten Island
+Coco,Others,292,Staten Island
+Coco,Maltese,26,Staten Island
+Coco,Chihuahua,24,Staten Island
+Coco,"Poodle, Standard",18,Staten Island
+Rocky,Yorkshire Terrier,58,Staten Island
+Rocky,Shih Tzu,35,Staten Island
+Rocky,American Pit Bull Mix / Pit Bull Mix,29,Staten Island
+Rocky,Chihuahua,23,Staten Island
+Rocky,Maltese,22,Staten Island
+Rocky,Others,321,Staten Island
+Bailey,Labrador Retriever,61,Staten Island
+Bailey,Others,285,Staten Island
+Bailey,Shih Tzu,36,Staten Island
+Bailey,Yorkshire Terrier,31,Staten Island
+Bailey,Maltese,21,Staten Island
+Bailey,Golden Retriever,20,Staten Island
+Buddy,Yorkshire Terrier,59,Staten Island
+Buddy,Others,295,Staten Island
+Buddy,Beagle,29,Staten Island
+Buddy,Bichon Frise,28,Staten Island
+Buddy,Labrador Retriever,21,Staten Island
+Buddy,Maltese,17,Staten Island
+Charlie,Yorkshire Terrier,34,Staten Island
+Charlie,Shih Tzu,29,Staten Island
+Charlie,Cavalier King Charles Spaniel,25,Staten Island
+Charlie,Maltese,21,Staten Island
+Charlie,German Shepherd Crossbreed,17,Staten Island
+Charlie,Others,295,Staten Island
+Molly,Labrador Retriever,29,Staten Island
+Molly,Maltese,25,Staten Island
+Molly,Shih Tzu,23,Staten Island
+Molly,Yorkshire Terrier,22,Staten Island
+Molly,"Poodle, Standard",13,Staten Island
+Molly,Others,278,Staten Island
+Daisy,Yorkshire Terrier,29,Staten Island
+Daisy,Maltese,27,Staten Island
+Daisy,Labrador Retriever Crossbreed,26,Staten Island
+Daisy,Shih Tzu,24,Staten Island
+Daisy,Beagle,17,Staten Island
+Daisy,Others,258,Staten Island
+Lola,Yorkshire Terrier,35,Staten Island
+Lola,Others,246,Staten Island
+Lola,Shih Tzu,28,Staten Island
+Lola,Morkie,14,Staten Island
+Lola,Jack Russell Terrier,13,Staten Island
+Lola,Labrador Retriever,11,Staten Island

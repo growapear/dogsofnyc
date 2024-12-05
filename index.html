@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>Dog in Manhattan</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/2.2.2/scrollama.min.js"></script> -->
+    <script src="scrollama.min.js"></script>
+   <link rel="stylesheet" href="style.css" /> 
+
+</head>
+<body>
+    <section id="intro">
+        <div class="intro-content">
+            <h1>The Dogs of New York City</h1>
+        </div>
+            <h4><strong>Uncover NYC's dog culture through names that reflect each borough's unique charm.</strong></h4>
+            <div id="view">
+            <p><em>Select your interest borough</em></p>
+        </div>
+            <nav>
+                <ul>
+                    <li><a class="nav-button" href="index.html">Manhattan</a></li>
+                    <li><a class="nav-button" href="page1.html">Brooklyn</a></li>
+                    <li><a class="nav-button" href="page2.html">Bronx</a></li>
+                    <li><a class="nav-button" href="page3.html">Queens</a></li>
+                    <li><a class="nav-button" href="page4.html">Staten Island</a></li>
+                </ul>
+            </nav>
+            <div id="scroll">
+                <h5><strong><em>Scroll to explore</em></strong></h5>
+            </div>
+        </div>
+    </section>
+    <div id="map-container">
+        <div id="map" class="sticky-map"></div>
+    </div>
+    
+    <main id="project-wrapper">
+        <section id="scrolly">
+            <article>
+                <div class="step" data-step="0">
+                    <img src="assets/dogoverall.png" alt="Dogs of NYC" class="header-image">
+                    <h3><strong>The Dogs of New York City</strong></h3>
+                    <h5 style="font-weight: normal; font-style: normal;">As the sun rises over New York City, the streets begin to bustle not just with humans, but with their loyal canine companions. In every neighborhood, from the lively streets of Brooklyn to the more refined avenues of Manhattan, dogs are an integral part of city life. Each borough has its own unique dog culture, and with it, its own popular dog names. This interactive exploration will take you on a journey through the neighborhoods of New York City, uncovering the stories behind the most beloved dog names and how they reflect the character of each borough. So, let's meet the dogs of NYC, one name at a time.</h5>
+                    <h3><strong>Manhattan — The Glamorous Companions</strong></h3>
+                    <p class="description-text" style="font-style: normal;">Manhattan dogs are no strangers to the high life. Whether they're strolling through Central Park or lounging in luxury apartments, these pups sport names that reflect the borough's sophisticated and stylish energy. From classic names like Charlie and Bella to trendy picks like Luna, dogs in Manhattan live the glamorous life, with every walk feeling like a photo op.</p>
+                    <p class="source-text">Based on Dog License Data from 2014-2024 <a href="https://data.cityofnewyork.us/Health/NYC-Dog-Licensing-Dataset/nu7n-tubp/about_data" target="_blank">NYC OpenData</a></p>
+                </div>
+                <div class="step" data-step="1">
+                    <img src="assets/charlie.png" alt="Charlie" class="header-image">
+                    <h3><strong> "Charlie"</strong></h3>
+                    <h5><strong>The Top Male Name in Manhattan</strong></h5>
+                    <p class="description-text" style="font-style: normal;">The top male dog name in Manhattan is "Charlie," and it’s no surprise—this name oozes charm and sophistication. It’s a popular choice among dog owners who appreciate the finer things in life, just like their Manhattan surroundings. Whether strolling through SoHo or dining al fresco in the West Village, a dog named Charlie knows how to live the high life in the heart of the city.</p>
+                </div>
+                <div class="step" data-step="2">
+                    <img src="assets/bella.png" alt="Bella" class="header-image">
+                    <h3><strong> "Bella"</strong></h3>
+                    <h5><strong>The Top Female Name in Manhattan</strong></h5>
+                    <p class="description-text" style="font-style: normal;">Bella is the undisputed queen of female dog names in Manhattan, and it’s no surprise—this name radiates elegance and grace, just like the city itself. Bella is perfect for a pup that knows how to navigate the busy streets of the Upper East Side or relax in Central Park. With a name like Bella, your dog is sure to attract admirers wherever they go, whether in a posh penthouse or the heart of the city's most dog-friendly spots.</p>
+                </div>                
+                  <div class="step" data-step="3">
+                    <h3 class="smaller-heading" style="margin-top: 3rem;"><strong>Time Trends showing how dog names have evolved over the years</strong></h3>
+                    <p class="description-text compact" style="font-style: normal;">In 2016, "Charlie" reigned supreme as Manhattan's most popular dog name, with an impressive 26,896 pups proudly carrying the name. As the name suggests, Charlie is a friendly, outgoing choice, much like the bustling, vibrant streets of Manhattan itself. Whether strolling through Central Park or dining at one of the borough's many dog-friendly cafes, Charlie embodies the energetic and social spirit of Manhattan's urban lifestyle. This classic name fits right in with the city's love for timeless style, making it a top choice for both trendy and down-to-earth dog owners alike.</p>
+                    <div class="chart-container" id="chart1" style="margin-top: -2rem;"></div>
+                </div>
+                  
+                <div class="step" data-step="4">
+                    <h3 style="margin-top: 2rem;"><strong>Manhattan's Most Pawpular: Yorkshire Terrier & Chihuahua</strong></h3>
+                    <p class="description-text" style="font-style: normal; font-size: 0.85rem;">Manhattan's iconic cityscape is mirrored by the energetic and stylish Yorkshire Terrier and the spunky Chihuahua, two breeds that thrive in the borough's fast-paced, trendy environment. Yorkies, with their elegant coats and bold personalities, are the ultimate fashion-forward pups, frequently seen at high-end boutiques on the Upper East Side or enjoying a brisk walk through Central Park. Chihuahuas, on the other hand, might be found at the hottest downtown cafes or comfortably perched in their owners' arms at Broadway theaters, embodying Manhattan's big-city attitude packed into a tiny frame. Both breeds fit seamlessly into Manhattan's buzzing energy and upscale charm.</p>
+                    
+                    <div class="dropdown" style="margin: 10px 0;">
+                        <label for="dogSelector">Select Dog Breed:</label>
+                        <select id="dogSelector">
+                            <option value="all">-- Select a Dog Name --</option>
+                        </select>
+                    </div>
+
+                    <div id="piechart1" class="borough-container">
+                    </div>
+                    <div class="tooltip" id="tooltip"></div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+   
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="piechart.js"></script>
+    <script>
+
+// Using d3 for convenience
+var main = d3.select("main");
+var scrolly = main.select("#scrolly");
+var steps = scrolly.selectAll(".step");
+
+
+// Initialize the scrollama
+var scroller = scrollama();
+
+// Resize function to set step heights
+function handleResize() {
+    var stepH = Math.floor(window.innerHeight * 0.75);
+    steps.style("height", stepH + "px");
+    scroller.resize();
+}
+
+
+
+// Setup the Scrollama instance, pass callback functions
+scroller.setup({
+    step: '.step',
+    offset: 0.5,
+    order: true, // Scrollama will trigger the steps in order
+    once: false // Allow steps to be triggered multiple times
+
+}).onStepEnter(handleStepEnter);
+
+// Scrollama event handler
+function handleStepEnter(response) {
+    if (!map.isStyleLoaded()) {
+        console.warn("Map style not fully loaded yet.");
+        return;
+    }
+
+    steps.classed("is-active", false);
+    d3.select(response.element).classed("is-active", true);
+
+    const currentStep = response.element.getAttribute('data-step');
+
+    // Reset filters initially (optional, based on your use case)
+    map.setFilter('dog-wordcloud-layer', null);
+
+    switch (currentStep) {
+        case '0':
+            // Step 0: Do not show the layer (hide)
+            map.setLayoutProperty('dog-wordcloud-layer', 'visibility', 'none');
+            break;
+        case '1':
+            // Step 1: Show only blue items
+            map.setLayoutProperty('dog-wordcloud-layer', 'visibility', 'visible');
+            map.setFilter('dog-wordcloud-layer', ['==', ['get', 'Color'], 'blue']);
+            break;
+        case '2':
+            // Step 2: Show only pink items
+            map.setLayoutProperty('dog-wordcloud-layer', 'visibility', 'visible');
+            map.setFilter('dog-wordcloud-layer', ['==', ['get', 'Color'], 'pink']);
+            break;
+        case '3':
+            // Step 3: Show both blue and pink items
+            map.setLayoutProperty('dog-wordcloud-layer', 'visibility', 'visible');
+            map.setFilter('dog-wordcloud-layer', ['in', ['get', 'Color'], 'blue', 'pink']);
+            break;
+        case '4':
+            // Step 4: Show both blue and pink items
+            map.setLayoutProperty('dog-wordcloud-layer', 'visibility', 'visible');
+            map.setFilter('dog-wordcloud-layer', ['in', ['get', 'Color'], 'blue', 'pink']);
+            break;
+        default:
+            console.warn(`No action defined for step ${currentStep}`);
+    }
+}
+
+
+
+// Resize event listener
+window.addEventListener('resize', handleResize);
+
+// Load the map and then initialize the scrollytelling
+mapboxgl.accessToken = 'pk.eyJ1IjoicGFueWFudXMiLCJhIjoiY2x6MXo0Ym9jMWZ6cjJrb2l6YXk2NnAzaSJ9._smojqWBDds304Vg0Ubtmw';
+
+        // Initialize the Map
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/panyanus/cm2mt0d7o004x01qjhaprhmtg',
+            center: [-74.0712, 40.7831], // Adjust as necessary  
+            zoom: 11,
+            projection: 'mercator'
+        });
+
+// Load the map and add the tileset source
+map.on('load', () => {
+    console.log('Map style is fully loaded.');
+
+    // Your layer and source addition code here
+    map.addSource('dog-wordcloud-source', {
+        type: 'vector',
+        url: 'mapbox://panyanus.1dwpk98s'
+    });
+
+    map.addLayer({
+        id: 'dog-wordcloud-layer',
+        type: 'symbol',
+        source: 'dog-wordcloud-source',
+        'source-layer': 'mh-wordcloud_data_top5_lat_ln-1wnqte',
+        layout: {
+            'text-field': ['get', 'AnimalName'],
+                'text-size': [
+        '/',
+        ['get', 'Size'], // 获取 'Size' 字段的值
+        2 // 除以 2
+    ],
+            'text-allow-overlap': true
+        },
+        paint: {
+        'text-color': [
+            'match',
+            ['get', 'Color'], // 获取 'Color' 字段的值
+            'pink', '#E754A3', // 适中的粉色
+            'blue', '#4D8FD3', // 适中的蓝色
+            '#000000' // 默认颜色（黑色），如果没有匹配
+        ],
+        'text-opacity': 1
+}
+
+    });
+    // Add the source for the boundary data
+    map.addSource('boundary-source', {
+        type: 'vector',
+        url: 'mapbox://panyanus.9luau68p' // Ensure this matches your tileset ID
+    });
+
+    // Add a layer for boundaries
+    map.addLayer({
+        id: 'boundary', // Updated layer ID
+        type: 'line', // Use 'line' type for boundaries
+        source: 'boundary-source', // Use the correct source name
+        'source-layer': 'mh-neighborhood_top5_summary-dret6k', // Update to the correct source-layer for boundaries
+        layout: {
+            'line-join': 'round',
+            'line-cap': 'round'
+        },
+        paint: {
+            'line-color': '#ffffff', // White color for boundary lines
+            'line-width': 2 // Adjust the line width as needed
+        }
+    });
+});
+
+
+                                                              
+    </script>
+    
+</body>
+</html>
